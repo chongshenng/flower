@@ -39,6 +39,10 @@ plot_results:
   expected_maximum: ${strategy.expected_accuracy}
   save_plot_path: ./${dataset_name}_${strategy.name}.png
 
+save_results:
+  _target_: cifar.utils.save_history
+  save_history_path: "results"
+
 get_ray_client_fn:
   _target_: cifar.client.get_ray_client_fn
   fed_dir: None
