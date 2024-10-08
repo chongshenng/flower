@@ -557,6 +557,7 @@ def plot_metric_from_history(
 
 def save_history(hist: History, save_history_path: str) -> None:
     """Save History object to a pickle file."""
+    Path(save_history_path).mkdir(parents=True, exist_ok=True)
     save_time = datetime.now().strftime("%H-%M-%S")
     with open(Path(save_history_path) / f"history_{save_time}.pkl", "wb") as f:
         pickle.dump(hist, f)
