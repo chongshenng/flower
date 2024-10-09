@@ -33,6 +33,7 @@ from .dpfedavg_fixed import DPFedAvgFixed as DPFedAvgFixed
 from .fault_tolerant_fedavg import FaultTolerantFedAvg as FaultTolerantFedAvg
 from .fedadagrad import FedAdagrad as FedAdagrad
 from .fedadam import FedAdam as FedAdam
+from .fedadam_mod import FedAdamMod as FedAdamMod
 from .fedavg import FedAvg as FedAvg
 from .fedavg_android import FedAvgAndroid as FedAvgAndroid
 from .fedavgm import FedAvgM as FedAvgM
@@ -59,6 +60,7 @@ __all__ = [
     "FaultTolerantFedAvg",
     "FedAdagrad",
     "FedAdam",
+    "FedAdamMod",
     "FedAvg",
     "FedAvgAndroid",
     "FedAvgM",
