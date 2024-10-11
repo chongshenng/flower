@@ -182,7 +182,7 @@ class FedAdamModDiff(FedOpt):
         )
 
         new_weights = [
-            x + eta_norm * y / (np.sqrt(z) + self.tau)
+            x - eta_norm * y / (np.sqrt(z) + self.tau)
             for x, y, z in zip(self.current_weights, self.m_t, self.v_t)
         ]
 
